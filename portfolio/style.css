@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins&family=Roboto:ital@0;1&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background: rgb(20, 20, 37);
+ font-family: Arial, Helvetica, sans-serif;
+}
+/* root styling */
+:root{
+    --light:#f8f9fa;
+    --secondary:#adb5bd;
+    --dark:#343a40;
+    --primary-color:rgb(179, 38, 62);
+    --secondary-color:#2ec4b6;
+    --border:#e9ecef;
+}
+
+
+#header{
+    background: rgb(51, 50, 50);
+    color: var(--light);
+    margin-bottom: 5px;
+}
+
+.myNav{
+    margin-left: 5%;
+    height: 70px;
+}
+.fullMenu{
+    position: relative;
+}
+.navMenu{
+    position: absolute;
+    background-color: red;
+    border-radius: 0 0 5px 5px;
+    height: 30px;
+    width: 100%;
+    top: 30px;
+}
+.container{
+    padding-top: 10%;
+}
+.aboutText{
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   color: rgb(252, 251, 251);
+   position: absolute;
+   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+   font-size: x-large;
+   font-weight: 700;
+}
+
+#myBackground{
+    height: 600px;
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0),rgb(19, 19, 37)),url(ray.jpg);
+    position: relative;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 5px;
+}
+#togg{
+    border: 0px;
+    background: transparent;
+    color: rgb(255, 222, 203);
+    border-radius: 50%;
+}
+#togg:hover{
+    background: transparent;
+}
+.navitem{
+   margin-right: 5%;
+    justify-content: end;
+}
+.navText{
+    color: rgb(255, 255, 255);
+    font-family: cursive;
+}
+.navText:hover{
+    color: rgb(90, 89, 89);
+}
+.navBackground{
+    border-radius:  0 0 5px 5px;
+    margin-bottom: 10px;
+}
+/*----sticky---*/
+.sticky{
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+}
+/*----.sticky---*/
+#mypic{
+    height: 100%;
+    width: 150px;
+    border-radius: 8px;
+}
+hr.line{
+    width: 100%;
+    border: 3px solid rgba(247, 247, 247, 0.87);
+    
+}
+.myaboutText{
+   margin-top: 10%;
+}
+.projects{
+    color: black;
+}
+.projects a{
+    margin-bottom: 3%;
+    text-decoration: none;
+    color: black;
+    margin-left: 3%;
+    background: #6182a3;
+    border-radius: 7px;
+    width: 35%;
+    text-align: center;
+    
+}
+.projects h3{
+    justify-content: center;
+    text-align: center;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.contacts{
+    display: flex;
+}
+.mail{
+    text-decoration: none;
+    color: #343a40;
+}
+.myDetails{
+    margin-left: 5%;
+}
+.box-shadow{
+    box-shadow: rgba(39, 47, 161, 0.336) 0px 8px 15px ;
+    
+}
+.skill-mf{
+    margin-left: 3%;
+   
+}
+.title-s{
+    font-weight: 600;
+    margin-top: 3px;
+}
+.myProj{
+    background: red;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#carImg{
+    height: 400px;
+    width: 400px;
+}
+/*-----swiper------*/
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 3%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+    margin: auto;
+  }
+  .mySwiper{
+    height: 30%;
+  }
+  swiper-slide a{
+    text-decoration: none;
+    color: rgb(221, 240, 139);
+    font-size: x-large;
+    font-weight: 500;
+}
+.swiper-pagination-bullet {
+    background-color: #ff0000; 
+  }
+
+.skill{
+    justify-content: center;
+    padding-top: 5%;
+}
+.myskill{
+    margin-right: 1%;
+}
+#about{
+    margin-top: 50px;
+    color: rgb(214, 214, 214);
+}
+hr.new1{
+    border-top: 5px solid pink;
+    width: 50%;
+    height: 6px;
+    margin-left: 25%;
+    animation: myAnim 6s linear 0s infinite normal forwards;
+    margin-top: 5%;
+}
+.projHead{
+    color: rgb(202, 202, 202);
+    margin-top: 10%;
+    margin-left: 40%;
+    margin-bottom: 7%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    margin-top: auto;
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: pink;     border-radius: 50%;
+    margin: 0 5px;  }
+
+  .swiper-pagination-bullet-active {
+    background-color: yellow;
+ }
+
+@keyframes myAnim {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+    
+    85% {
+		transform: scale3d(1, 1.25, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+.line1{
+	background: linear-gradient(-45deg,  #020303, #db633f, #c91b5e, #1d9dcc, #18d4a8, #020303);
+	background-size: 400% 400%;
+	animation: gradient 6s ease infinite;
+	height: 2px;
+    
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+   
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.line2{
+    margin-left: 25%;
+    width: 50%;
+    animation: myAnim 6s linear 0s infinite normal forwards;
+}
+
+
+
+.socials{
+    margin-right: 15% ;
+}
+a,a:visited { color: #fff; }
+a:hover { color: #fff; }
+
+.social {
+	float: right;
+	margin: 2em 2em; width: 80px; height: 80px; 	
+	display: block; text-align: center; line-height:103px; color: #fff;
+	position: relative;
+	transform:rotateY(0deg);
+	transition:transform .25s ease-out;
+	transform-style:preserve-3d;
+    
+}
+.social > div {
+	width: 100px; height: 100px; background: #363636;
+	position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: 10%;
+}
+.social >.front {
+	transform:translateZ(40px);
+}
+.social >.back {
+	background: #3B5998; font-size: 3em;
+	transform:rotateY(-100deg) translateZ(40px);
+}
+
+/*  Social Media Colors 
+	Facebook #3B5998
+	Flickr #FE0883
+	Foursquare #8FD400
+	Google+ #C63D2D
+	Instagram #4E433C
+	Linkedin #4875B4
+	Tumblr #2B4964
+	Twitter #33CCFF
+	Vimeo #86B32D
+	Youtube #FF3333
+	Dribbble #ea4c89
+*/
+.social.social-twitter > .back { background: #55ACEE; }
+.social.social-github > .back { background: #f3f3f3; color: #000; }
+.social.social-facebook > .back { background: #12A5F4; }
+.social.social-linkedin > .back { background: #4875B4; }
+.social.social-instagram > .back { background: #8a1b5f; }
+
+/* Hover */
+.social:hover {
+	transform: rotateY(100deg);
+}
