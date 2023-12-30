@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins&family=Roboto:ital@0;1&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background: rgb(20, 20, 37);
+ font-family: Arial, Helvetica, sans-serif;
+}
+/* root styling */
+:root{
+    --light:#f8f9fa;
+    --secondary:#adb5bd;
+    --dark:#343a40;
+    --primary-color:rgb(179, 38, 62);
+    --secondary-color:#2ec4b6;
+    --border:#e9ecef;
+}
+
+
+
+#header{
+    background: rgb(51, 50, 50);
+    color: var(--light);
+    margin-bottom: 0px;
+}
+
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.container{
+    padding-top: 10%;
+}
+.aboutText{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(252, 251, 251);
+    position: absolute;
+    top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+    font-size: x-large;
+    font-weight: 700;
+    margin-bottom: 10%;
+ }
+
+ .typed-out{
+    color: #4cb9bdf8;
+    overflow: hidden;
+    border-right: .15em solid rgba(51, 96, 139, 0.808);
+    white-space: nowrap;
+    animation: 
+      typing 10s forwards;
+    font-size: 1.6rem;
+    width: 0;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+#myBackground{
+    height: 600px;
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0),rgb(19, 19, 37)),url(ray.jpg);
+    position: relative;
+    margin: auto;
+    margin-top: 3%;
+    border-radius: 5px;
+}
+#togg{
+    border: 0px;
+    background: transparent;
+    color: rgb(201, 201, 201);
+    border-radius: 50%;
+}
+#togg:hover{
+    background: transparent;
+}
+.navitem{
+   margin-right: 0px;
+    justify-content: center;
+    display: flex;
+}
+.navText{
+    color: rgb(255, 255, 255);
+    font-family: 'roboto', sans-serif;
+    font-weight: 500;
+}
+
+.navTextHome{
+    margin-right: 20px;
+}
+
+.navText:hover{
+    color: rgb(90, 89, 89);
+}
+.navBackground{
+    border-radius:  0 0 5px 0px;
+}
+/*----sticky---*/
+.sticky{
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+}
+/*----.sticky---*/
+#mypic{
+    height: 100%;
+    width: 150px;
+    border-radius: 8px;
+}
+hr.line{
+    width: 100%;
+    border: 3px solid rgba(247, 247, 247, 0.87);
+    
+}
+.myaboutText{
+   margin-top: 10%;
+}
+.projects{
+    color: black;
+}
+.projects a{
+    margin-bottom: 3%;
+    text-decoration: none;
+    color: black;
+    margin-left: 3%;
+    background: #6182a3;
+    border-radius: 7px;
+    width: 35%;
+    text-align: center;
+    
+}
+.projects h3{
+    justify-content: center;
+    text-align: center;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.contacts{
+    display: flex;
+}
+.mail{
+    text-decoration: none;
+    color: #343a40;
+}
+.myDetails{
+    margin-left: 5%;
+}
+
+.skill-mf{
+    margin-left: 3%;
+   
+}
+.title-s{
+    font-weight: 600;
+    margin-top: 3px;
+}
+.myProj{
+    background: red;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#carImg{
+    height: 400px;
+    width: 400px;
+}
+
+.displayName{
+    text-decoration: none;
+}
+
+.text-center {
+    color: rgba(255, 246, 204, 0.836);
+    text-align: center;
+    box-shadow: rgba(50, 189, 199, 0.918) 0px 8px 10px;
+    margin-top: 3%;
+  }
+
+.custom-image {
+    width: 70%;
+    border-radius: 5%;
+  }
+  .projName{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 550;
+    text-decoration: none;
+    color: #4cb9bdf8;
+  }
+  .projHead{
+    color: rgb(202, 202, 202);
+    margin-top: 10%;
+    justify-content: center;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    margin-top: auto;
+}
+
+hr.new1{
+    border-top: 5px solid pink;
+    width: 50%;
+    height: 6px;
+    margin-left: 25%;
+    animation: myAnim 6s linear 0s infinite normal forwards;
+    margin-top: 5%;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+    
+    85% {
+		transform: scale3d(1, 1.25, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+.line1{
+	background: linear-gradient(-45deg,  #020303, #db633f, #c91b5e, #1d9dcc, #18d4a8, #020303);
+	background-size: 400% 400%;
+	animation: gradient 6s ease infinite;
+	height: 2px;
+    
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+   
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.line2{
+    margin-left: 25%;
+    width: 50%;
+    animation: myAnim 6s linear 0s infinite normal forwards;
+}
+
+.aboutBtn{
+    border: 0px;
+    background-color: #020303;
+    padding: 1%;
+    border-radius: 10%;
+    justify-content: end;
+}
+.aboutBtn:hover{
+    background-color: #0b104d;
+}
+
+.AboutPage{
+    color:var(--light);
+    text-decoration: none;
+    font-family: 'roboto';
+}
+.abtBtn{
+    justify-content: center;
+    display: flex;
+}
